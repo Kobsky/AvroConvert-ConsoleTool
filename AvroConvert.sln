@@ -47,7 +47,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Profiler", "tests\Profiler\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avro-ConsoleTool", "Avro-ConsoleTool\Avro-ConsoleTool.csproj", "{B7053C94-BA3C-40F1-A2CE-C7174A2A69AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avro-ConsoleToolTest", "Avro-ConsoleToolTest\Avro-ConsoleToolTest.csproj", "{7627E9F4-F195-48AA-AC5F-3C30A6C7E22C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avro-ConsoleToolTest", "tests\Avro-ConsoleToolTest\Avro-ConsoleToolTest.csproj", "{7627E9F4-F195-48AA-AC5F-3C30A6C7E22C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

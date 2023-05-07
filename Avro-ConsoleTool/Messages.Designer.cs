@@ -61,11 +61,11 @@ namespace Avro_ConsoleTool {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Usage:  Avro-ConsoleTool [OPTIONS] COMMAND
+        ///   Looks up a localized string similar to Usage:  Avro-ConsoleTool COMMAND
         ///
         ///A command line AVRO console tool based on AvroConvert project
         ///
-        ///Options:
+        ///Commands:
         ///    -help    show help message.
         /// </summary>
         public static string HelpDescription {

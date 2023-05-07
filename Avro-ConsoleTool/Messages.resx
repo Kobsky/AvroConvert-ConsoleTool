@@ -118,11 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="HelpDescription" xml:space="preserve">
-    <value>Usage:  Avro-ConsoleTool [OPTIONS] COMMAND
+    <value>Usage:  Avro-ConsoleTool COMMAND
 
 A command line AVRO console tool based on AvroConvert project
 
-Options:
+Commands:
     -help    show help message</value>
   </data>
 </root>
