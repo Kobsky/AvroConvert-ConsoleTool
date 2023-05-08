@@ -66,11 +66,42 @@ namespace Avro_ConsoleTool {
         ///A command line AVRO console tool based on AvroConvert project
         ///
         ///Commands:
-        ///    -help    show help message.
+        ///	-help	show help message
+        ///	-shematoclass or -stc convert avsc shema to C# .cs model
+        ///		example:	
+        ///			Avro-ConsoleTool.exe -shematoclass my-shema.avsc my-class.cs
+        ///			Avro-ConsoleTool.exe -stc my-shema.avsc my-class.cs.
         /// </summary>
         public static string HelpDescription {
             get {
                 return ResourceManager.GetString("HelpDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To convert the Avro scheme to a C# model should be three arguments: command name; Avro schema file name; C# model file name..
+        /// </summary>
+        public static string Validator_STC_InvalidArgumentsNumber {
+            get {
+                return ResourceManager.GetString("Validator_STC_InvalidArgumentsNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The second parameter should be the Avro schema file name, for example, my_sheme.avsc.
+        /// </summary>
+        public static string Validator_STC_SecondParameterInvalid {
+            get {
+                return ResourceManager.GetString("Validator_STC_SecondParameterInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The third parameter should be the C# model file name, for example, my_class.cs.
+        /// </summary>
+        public static string Validator_STC_ThridParameterInvalid {
+            get {
+                return ResourceManager.GetString("Validator_STC_ThridParameterInvalid", resourceCulture);
             }
         }
     }

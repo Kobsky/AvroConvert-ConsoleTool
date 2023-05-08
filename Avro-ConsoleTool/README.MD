@@ -4,6 +4,10 @@ It's a wrapper on AvroConvert that can be run from the console to automate some 
 
 ## Usage:
 
-	Options:
+	Commands:
 	-help	show help message
+	-shematoclass or -stc convert avsc shema to C# .cs model
+		example:	
+			Avro-ConsoleTool.exe -shematoclass my-shema.avsc my-class.cs
+			Avro-ConsoleTool.exe -stc my-shema.avsc my-class.cs			
 

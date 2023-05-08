@@ -1,17 +1,21 @@
-﻿namespace Avro_ConsoleTool
+﻿using Avro_ConsoleTool.Strategies;
+using Avro_ConsoleTool.Validators;
+
+namespace Avro_ConsoleTool
 {
     public class AvroConsole
     {
-        private const string HelpOption = "-help";
-
         public static void Main(string[] args)
         {
-            if(args == null 
-                || args.Length == 0 
-                || (args.Length > 0 && args[0].Equals(HelpOption, StringComparison.InvariantCultureIgnoreCase)))
+            var command = CommandParser.Parse(args);
+            var validator = ValidatorFactory.Create(command);
+            var valdationResult = validator.Validate(args);
+            if(valdationResult.Any())
             {
-                Console.WriteLine(Messages.HelpDescription);
+                throw new ApplicationException(string.Join('\n',valdationResult));
             }
+            var strategy = StrategyFactory.Create(command);
+            strategy.Run(args);          
         }
     }
 }

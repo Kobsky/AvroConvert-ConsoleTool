@@ -1,4 +1,3 @@
-using Avro_ConsoleTool;
 namespace Avro_ConsoleToolTest
 {
     public class ConsoleToolTest
@@ -23,6 +22,18 @@ namespace Avro_ConsoleToolTest
         {
             yield return new[] { new string[0] };
             yield return new[] { new string[1] { "-help" } };
+        }
+
+        [Fact]
+        public void ThrowExceptionOnValidationFailTest()
+        {
+            //Arrange
+            var invalidArgs = new string[] {
+                "stc"
+            };
+
+            //Act
+            Assert.Throws<ApplicationException>(() => AvroConsole.Main(invalidArgs));
         }
     }
 }
